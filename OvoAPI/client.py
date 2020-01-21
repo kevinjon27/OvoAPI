@@ -187,7 +187,7 @@ class Client(object):
         response = None
 
         if (self.settings.get('access_token')):
-            headers['authorization'] = 'Bearer ' + self.settings.get('access_token')
+            headers['authorization'] = self.settings.get('access_token')
 
         if (method == 'POST'):
             response = requests.post(url, json=params, headers=headers)

@@ -13,7 +13,7 @@ except ImportError:
 
 if __name__ == '__main__':
 
-    phone_number = '081213931807' #example +6281213031087
+    phone_number = '' #example +6281213031087
 
 
     print('Client version: {0!s}'.format(client_version))
